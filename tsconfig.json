@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "compilerOptions": {
+    "target": "ES5",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "hooksToolkit": ["./packages/hooks/src/index.ts"],
+      "hooks-toolkit": ["./packages/hooks/src/index.ts"],
+      "hooksToolkit/lib/*": ["./packages/hooks/src/*"],
+      "hooks-toolkit/lib/*": ["./packages/hooks/src/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "importHelpers": true
+  },
+  "include": [".dumirc.ts"],
+  "exclude": ["node_modules", "lib", "es", "dist", "example"]
+}
